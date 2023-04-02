@@ -1,7 +1,8 @@
 const form = document.querySelector('#task_form');
 const taskInput = document.querySelector('#taskInput');
-const tasksList = document.querySelector('#tasksGroup');
+let tasksList = document.querySelector('#tasksGroup');
 const emptyList = document.querySelector('#emptyList');
+const clear = document.querySelector('.delete');
 
 form.addEventListener('submit', addTask);
 
@@ -19,9 +20,22 @@ taskInput.focus();
 if(tasksGroup.children.length > 1) {
     emptyList.classList.add('none')
 };
+}
 
+clear.addEventListener ('click', onclick);
+function onclick () {
+    tasksList.innerHTML = `<div class="empty-list_title">Нет задач</div>`;
 }
-tasksList.addEventListener('clear')
-function deleteTask(event) {
-    if()
-}
+
+// if('clear', onclick) {
+//     tasksList = `<li id="emptyList">
+//     <div class="empty-list_title">Нет задач</div>
+//     </li>`;
+// };
+
+// tasksList.addEventListener('clear', deleteTask);
+// function deleteTask(event) {
+//     tasksList.innerHTML = "";
+// };
+
+
