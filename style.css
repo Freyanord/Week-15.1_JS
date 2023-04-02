@@ -1,22 +1,41 @@
 .container {
     display: flexbox;
-    max-width: 30%;
-    max-height: 70%;
+    position: absolute;
+    max-width: 50vw;
+    max-height: 80vh;
     border: 5px solid blue;
     padding: 10px;
-    background-color: cyan;
+    background-color: lightcyan;
+    margin-left:  40%;
 }
-
-h1 {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
-
-h2 {
-    
-}
-
-
 
 .none {
     display: none !important;
 }
+
+h1 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style: italic;
+    color: darkblue;
+}
+
+h2 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: darkblue;
+}
+
+button {
+    border-radius: 25px;
+    border: none;
+    height: 30px;
+    width: 120px;
+    font-weight: lighter;
+}
+
+.empty-list_title {
+    color: grey;
+    font-size: large;
+}
+ 
+
+

@@ -27,15 +27,6 @@ function onclick () {
     tasksList.innerHTML = `<div class="empty-list_title">Нет задач</div>`;
 }
 
-// if('clear', onclick) {
-//     tasksList = `<li id="emptyList">
-//     <div class="empty-list_title">Нет задач</div>
-//     </li>`;
-// };
 
-// tasksList.addEventListener('clear', deleteTask);
-// function deleteTask(event) {
-//     tasksList.innerHTML = "";
-// };
 
 
