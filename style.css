@@ -1,3 +1,22 @@
+.container {
+    display: flexbox;
+    max-width: 30%;
+    max-height: 70%;
+    border: 5px solid blue;
+    padding: 10px;
+    background-color: cyan;
+}
+
+h1 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+h2 {
+    
+}
+
+
+
 .none {
     display: none !important;
 }
