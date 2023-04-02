@@ -3,19 +3,16 @@ const taskInput = document.querySelector('#taskInput');
 const tasksList = document.querySelector('#tasksGroup');
 const emptyList = document.querySelector('#emptyList');
 
-form.addEventListener('submit', function (event) {
-    //отменяем отправку формы
+form.addEventListener('submit', addTask);
+
+function addTask(event) {
     event.preventDefault();
-    //достаем текст задачи из поля ввода
     const taskText = taskInput.value;
-    //формируем разметку для новой задачи
     const taskHTML = `<li class="t-1">
-                        <span class="task_title">${taskText}</span>
+                        <span class="task_itle">${taskText}</span>
                         <input type="checkbox"/>  
                     </li>`;
-//добавляем задачу на страницу
 tasksGroup.insertAdjacentHTML('beforeend', taskHTML); 
-//очищаем поле ввода 
 taskInput.value = "";
 taskInput.focus();
 
@@ -23,4 +20,8 @@ if(tasksGroup.children.length > 1) {
     emptyList.classList.add('none')
 };
 
-});
+}
+tasksList.addEventListener('clear')
+function deleteTask(event) {
+    if()
+}
