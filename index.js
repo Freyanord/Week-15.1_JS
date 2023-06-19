@@ -1,4 +1,4 @@
-const form = document.querySelector('#task_form');
+const form = document.querySelector('#task-form');
 const taskInput = document.querySelector('#taskInput');
 let tasksList = document.querySelector('#tasksGroup');
 const emptyList = document.querySelector('#emptyList');
@@ -24,7 +24,7 @@ if(tasksGroup.children.length > 1) {
 
 clear.addEventListener ('click', onclick);
 function onclick () {
-    tasksList.innerHTML = `<div class="empty-list_title">Нет задач</div>`;
+    tasksList.innerHTML = `<div class="empty-list-title">Нет задач</div>`;
 }
 
 
