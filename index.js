@@ -10,7 +10,7 @@ function addTask(event) {
     event.preventDefault();
     const taskText = taskInput.value;
     const taskHTML = `<li class="t-1">
-                        <span class="task_itle">${taskText}</span>
+                        <span class="task-itle">${taskText}</span>
                         <input type="checkbox"/>  
                     </li>`;
 tasksGroup.insertAdjacentHTML('beforeend', taskHTML); 

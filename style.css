@@ -1,12 +1,13 @@
 .container {
-    display: flexbox;
-    position: absolute;
-    max-width: 50vw;
-    max-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 40%;
+    max-height: 100%;
     border: 5px solid blue;
-    padding: 10px;
+    padding: 20px;
     background-color: lightcyan;
-    margin-left:  40%;
+    margin:auto;
 }
 
 .none {
@@ -27,6 +28,7 @@ h2 {
 button {
     border-radius: 25px;
     border: none;
+    padding: 10px;
     font-weight: bold;
 }
 
